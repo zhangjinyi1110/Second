@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/items1">
+        <item android:id="@+id/home"
+            android:title="首页"
+            android:icon="@drawable/icon_home_page"/>
+        <item android:id="@+id/synthesize"
+            android:title="综合"
+            android:icon="@drawable/icon_exchange"/>
+        <!--<item android:id="@+id/exchange"-->
+            <!--android:title="以物换物"-->
+            <!--android:icon="@drawable/icon_transferring"/>-->
+    </group>
+
+    <group android:id="@+id/items2">
+        <item android:id="@+id/publish"
+            android:title="我的发布"
+            android:icon="@drawable/icon_my_publish"/>
+        <item android:id="@+id/message"
+            android:title="回复我的"
+            android:icon="@drawable/icon_record_me"/>
+        <item android:id="@+id/collect"
+            android:title="我的收藏"
+            android:icon="@drawable/icon_my_collection"/>
+    </group>
+
+    <group android:id="@+id/items3">
+        <item android:id="@+id/contact"
+            android:title="联系我们"
+            android:icon="@drawable/icon_contact_us"/>
+        <item android:id="@+id/about"
+            android:title="关于我们"
+            android:icon="@drawable/icon_about_us"/>
+    </group>
+
+</menu>

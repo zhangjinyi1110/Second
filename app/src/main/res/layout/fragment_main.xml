@@ -1,0 +1,69 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.zjy.second.fragment.MainFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:layout_scrollFlags="scroll"
+            app:indicator_drawable_selected="@drawable/banner_on"
+            app:indicator_drawable_unselected="@drawable/banner_off"
+            app:indicator_height="4dp"
+            app:indicator_width="17.75dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/classify_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="#9bc6ff"
+                app:tabSelectedTextColor="#9bc6ff"
+                app:tabTextColor="#969696"
+                app:tabMode="scrollable"/>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/classify_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/main_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end|bottom"
+        android:id="@+id/floating"
+        android:src="@drawable/floating"
+        app:backgroundTint="#ffffff"
+        android:layout_margin="15dp"/>
+
+</android.support.design.widget.CoordinatorLayout>

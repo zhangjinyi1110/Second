@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/goods_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/goods_user_image"
+                android:src="@mipmap/ic_launcher"
+                android:layout_margin="8dp"/>
+
+            <TextView
+                android:id="@+id/goods_user_name"
+                android:text="@string/app_name"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/goods_title"
+                android:text="珀莱雅2017新品套装慢出"
+                android:textSize="18sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/goods_price"
+                android:text=" $300 "
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:background="@drawable/goods_price_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/goods_tell"
+                android:text=" 12345678910 "
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
